@@ -15,7 +15,7 @@ type SkillCarouselProps = {
   slides: Array<Array<skillProgressProps>>;
 };
 
-const AUTO_SLIDE_INTERVAL = 3500; // ms
+const AUTO_SLIDE_INTERVAL = 12000; // ms
 
 const SkillCarousel: React.FC<SkillCarouselProps> = ({ slides }) => {
   const [active, setActive] = useState(0);
