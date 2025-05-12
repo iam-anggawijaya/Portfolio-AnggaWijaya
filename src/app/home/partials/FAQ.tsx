@@ -16,8 +16,8 @@ const FAQ = () => {
   return (
     //Section---------------------------------------------------------------------------------
     <div
+      id='faq'
       className='custom-container flex flex-col gap-[24px] py-[80px]'
-      id='container-skill'
     >
       <div className='flex-between flex h-full rounded-4xl border border-neutral-300 bg-neutral-50 px-[16px] py-[20px] md:p-[40px]'>
         <div className='mx-auto flex min-h-[663px] w-full flex-col justify-between md:mx-0 md:mr-5 md:w-full md:max-w-[357px]'>
@@ -68,7 +68,12 @@ const FAQ = () => {
             <p className='text-lg-regular hidden text-neutral-950 md:block'>
               Have more questions? <br /> Send me a message.
             </p>
-            <Button asChild variant={'secondary'} size='default'>
+            <Button
+              asChild
+              variant={'secondary'}
+              size='default'
+              className='hover:bg-primary-200'
+            >
               <Link href='#contact' className='text-sm-medium text-neutral-25'>
                 Get in touch
               </Link>

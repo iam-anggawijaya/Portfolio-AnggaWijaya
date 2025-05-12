@@ -10,7 +10,7 @@ const hero = () => {
   return (
     <section
       className='bg-primary-400 pointer-events-none flex w-full flex-wrap justify-center overflow-hidden'
-      id='hero'
+      id='home'
     >
       <div
         className='relative w-192 md:w-360'

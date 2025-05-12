@@ -14,11 +14,11 @@ export const navigationData: Navigation[] = [
   },
   {
     label: 'Skill',
-    href: '#skill',
+    href: '#my-professional-skill',
   },
   {
     label: 'Projects',
-    href: '#projects',
+    href: '#my-latest-work',
   },
   {
     label: 'FAQ',

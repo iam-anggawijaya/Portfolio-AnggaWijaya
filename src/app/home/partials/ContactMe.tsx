@@ -7,6 +7,7 @@ const ContactMe = () => {
   return (
     //Section---------------------------------------------------------------------------------
     <div
+      id='contact'
       className='relative w-full'
       style={{
         backgroundImage: "url('/images/pattern-bot.svg')",
@@ -21,9 +22,9 @@ const ContactMe = () => {
       >
         <div className='flex flex-col items-center justify-center gap-6 md:flex-row md:justify-between'>
           <div className='flex w-full flex-col gap-10 md:basis-[453px]'>
-            <div id='contact' className='flex flex-col gap-5.5'>
+            <div className='flex flex-col gap-5.5'>
               <h3 className='display-md-bold md:display-2xl-bold tracking-[-0.02em] text-neutral-950'>
-                I've been waiting for you.
+                I&apos;ve been waiting for you.
               </h3>
               <p className='text-lg-medium text-neutral-950'>
                 Fill in the form or Send us an email

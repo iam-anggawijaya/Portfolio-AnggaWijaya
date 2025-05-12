@@ -26,7 +26,7 @@ const HireMeCard: React.FC<HireMeCardProps> = ({ className }) => {
         width={430}
         height={428}
         alt='asian-men-card'
-        className='absolute bottom-0 z-11 scale-110 object-contain'
+        className='pointer-events-none absolute bottom-0 z-11 scale-110 object-contain'
       />
 
       <Image
@@ -34,15 +34,15 @@ const HireMeCard: React.FC<HireMeCardProps> = ({ className }) => {
         width={527}
         height={514}
         alt='patern-bg-card'
-        className='absolute z-5 object-contain'
+        className='pointer-events-none absolute z-5 object-contain'
       />
       <Button
         asChild
-        className='absolute bottom-[31px] z-20 flex h-[48px] px-[76px]'
+        className='hover:bg-primary-200 absolute bottom-[31px] z-20 flex h-[48px] px-[76px] transition-colors duration-300'
       >
         <Link
           href='#contact'
-          className='flex items-center gap-1 text-sm text-neutral-950'
+          className='hover:text-base-white flex items-center gap-1 text-sm text-neutral-950'
         >
           <Mail className='size-5' />
           Hire Me

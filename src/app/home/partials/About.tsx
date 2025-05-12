@@ -8,7 +8,10 @@ import YearsExperience from '@/components/ui/About/YearsExperience';
 
 const About = () => (
   //Section---------------------------------------------------------------------------------
-  <div className='custom-container pointer-events-none mt-[33px] pt-[40px] pb-[40px] md:pt-[40px] md:pb-[80px]'>
+  <div
+    id='about'
+    className='custom-container mt-[33px] pt-[40px] pb-[40px] md:pt-[40px] md:pb-[80px]'
+  >
     {/* Top Info Block */}
     <div className='flex flex-col gap-4'>
       <p className='text-lg-semibold text-neutral-950'>

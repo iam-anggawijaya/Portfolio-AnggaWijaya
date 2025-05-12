@@ -13,7 +13,7 @@ const BuildingDigitalProducts: React.FC<BuildingDigitalProductsProps> = ({
   return (
     <div
       className={cn(
-        'relative flex h-[395px] flex-col justify-between overflow-hidden bg-gradient-to-br from-[#002C6E] to-[#0C4EAF] px-4 py-8 md:px-6 md:py-6',
+        'pointer-events-none relative flex h-[395px] flex-col justify-between overflow-hidden bg-gradient-to-br from-[#002C6E] to-[#0C4EAF] px-4 py-8 md:px-6 md:py-6',
         className
       )}
       style={{ width: 'clamp(22.56rem, 63.56vw, 48.94rem)' }}
@@ -35,7 +35,7 @@ const BuildingDigitalProducts: React.FC<BuildingDigitalProductsProps> = ({
             50%
           </p>
           <p className='text-sm-medium lg:text-lg-medium text-neutral-25 whitespace-nowrap'>
-            Global Client's Handle
+            Global Client&apos;s Handle
           </p>
         </div>
         <div className='w-[214px]'>

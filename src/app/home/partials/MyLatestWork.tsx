@@ -6,8 +6,8 @@ const MyLatestWork = () => {
   return (
     //Section---------------------------------------------------------------------------------
     <div
+      id='my-latest-work'
       className='custom-container pt-[40px] pb-[40px] md:pt-[40px] md:pb-[80px]'
-      id='container-skill'
     >
       <h2
         className='text-center font-bold tracking-[-0.02em] text-neutral-950'

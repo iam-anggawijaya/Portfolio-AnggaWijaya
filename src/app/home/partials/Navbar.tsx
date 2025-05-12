@@ -85,7 +85,8 @@ const Navbar = () => {
           asChild
           className={`hover:bg-primary-200 hidden transition-colors duration-300 lg:flex lg:w-43.75 ${isScrolled ? 'bg-primary-300 text-neutral-25' : 'bg-neutral-25 text-neutral-950'}`}
         >
-          <Link href='#contact' className='flex items-center gap-1'>
+          <Link href='#contact' className='flex items-center gap-2'>
+            <Mail className='size-5' />
             Hire Me
           </Link>
         </Button>

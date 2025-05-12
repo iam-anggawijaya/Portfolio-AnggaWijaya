@@ -1,11 +1,9 @@
-import { StaticImageData } from 'next/image';
-
 export type WorkExperience = {
   position: string;
   company: string;
   description: string;
   year: string;
-  logo: StaticImageData;
+  logo: string;
 };
 
 export const workExperienceData: WorkExperience[] = [
