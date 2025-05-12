@@ -18,9 +18,9 @@ const hero = () => {
         id='hero-container'
       >
         <h1
-          className='text-base-white absolute left-1/2 z-10 w-full -translate-x-[50%] text-center font-extrabold'
+          className='text-base-white absolute left-1/2 z-10 w-full -translate-x-[50%] text-center font-extrabold whitespace-nowrap'
           style={{
-            fontSize: 'clamp(2.5rem, 10.42vw, 9.38rem)',
+            fontSize: 'clamp(2.19rem, 10.42vw, 9.38rem)',
             lineHeight: 'clamp(3.5rem, 13.54vw, 12.19rem)',
             top: 'clamp(6.25rem, 10vw, 9rem)',
           }}
