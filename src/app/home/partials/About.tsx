@@ -5,6 +5,7 @@ import ExpertSkills from '@/components/ui/About/ExpertSkills';
 import HireMeCard from '@/components/ui/About/HireMeCard';
 import WhyChooseMe from '@/components/ui/About/WhyChooseMeCard';
 import YearsExperience from '@/components/ui/About/YearsExperience';
+import FadeInWhenVisible from '@/components/ui/FadeInWhenVisible';
 
 const About = () => (
   //Section---------------------------------------------------------------------------------
@@ -33,14 +34,15 @@ const About = () => (
       </p>
 
       {/* Component Gallery */}
-      <div className='flex-center flex flex-wrap gap-[20px] pt-[24px] md:pt-[48px]'>
-        <WhyChooseMe className='flex-1 basis-[320px] rounded-2xl p-5 md:p-6' />
-        <ExpertSkills className='flex-1 basis-[320px] rounded-2xl p-5 md:p-6' />
-        <YearsExperience className='flex-1 basis-[320px] rounded-2xl p-5 md:p-6' />
-        <HireMeCard className='flex-1 basis-[320px] rounded-2xl p-5 md:p-6' />
-        <BuildingDigitalProducts className='flex-2 basis-[660px] rounded-2xl p-5 md:p-6' />
-        {/* </div> */}
-      </div>
+      <FadeInWhenVisible>
+        <div className='group flex-center flex flex-wrap gap-[20px] pt-[24px] md:pt-[48px]'>
+          <WhyChooseMe className='flex-1 basis-[320px] rounded-2xl p-5 md:p-6' />
+          <ExpertSkills className='flex-1 basis-[320px] rounded-2xl p-5 md:p-6' />
+          <YearsExperience className='flex-1 basis-[320px] rounded-2xl p-5 md:p-6' />
+          <HireMeCard className='flex-1 basis-[320px] rounded-2xl p-5 md:p-6' />
+          <BuildingDigitalProducts className='flex-2 basis-[660px] rounded-2xl' />
+        </div>
+      </FadeInWhenVisible>
     </div>
   </div>
 );

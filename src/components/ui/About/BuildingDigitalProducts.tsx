@@ -13,12 +13,14 @@ const BuildingDigitalProducts: React.FC<BuildingDigitalProductsProps> = ({
   return (
     <div
       className={cn(
-        'pointer-events-none relative flex h-[395px] flex-col justify-between overflow-hidden bg-gradient-to-br from-[#002C6E] to-[#0C4EAF] px-4 py-8 md:px-6 md:py-6',
+        'pointer-events-none relative flex h-[452px] flex-col justify-between overflow-hidden bg-gradient-to-br from-[#002C6E] to-[#0C4EAF] px-4 py-8 md:px-6 md:py-6 lg:h-[395px]',
         className
       )}
-      style={{ width: 'clamp(22.56rem, 63.56vw, 48.94rem)' }}
+      style={{
+        width: 'clamp(22.56rem, 63.56vw, 48.94rem)',
+      }}
     >
-      <div>
+      <div className=''>
         <p className='display-sm-bold md:display-md-bold text-base-white'>
           Building Digital
         </p>
@@ -29,10 +31,10 @@ const BuildingDigitalProducts: React.FC<BuildingDigitalProductsProps> = ({
           </span>
         </p>
       </div>
-      <div className='flex flex-col justify-between gap-2 lg:bottom-0 lg:flex-row lg:gap-6'>
+      <div className='flex flex-col justify-between gap-6 lg:bottom-0 lg:flex-row lg:gap-10'>
         <div className='w-[214px]'>
           <p className='display-lg-bold lg:display-2xl-bold text-neutral-25'>
-            50%
+            50+
           </p>
           <p className='text-sm-medium lg:text-lg-medium text-neutral-25 whitespace-nowrap'>
             Global Client&apos;s Handle
@@ -60,36 +62,28 @@ const BuildingDigitalProducts: React.FC<BuildingDigitalProductsProps> = ({
         width={540}
         height={304}
         alt='pixel-world-map'
-        className='absolute right-0 bottom-0 h-auto object-contain opacity-15'
+        className='absolute top-1/2 right-0 translate-x-23 -translate-y-19 scale-145 object-contain opacity-15 lg:translate-x-0 lg:-translate-y-45 lg:scale-99'
       />
       <Image
         src='/images/flag-german.svg'
         width={70}
         height={32}
         alt='pixel-world-map'
-        className='absolute top-[132px] left-[182px] object-contain md:top-[134px] md:left-[321px]'
+        className='absolute top-[132px] right-[111px] object-contain lg:top-[134px] lg:right-[391px]'
       />
       <Image
         src='/images/flag-indonesia.svg'
         width={70}
         height={32}
         alt='pixel-world-map'
-        className='absolute object-contain'
-        style={{
-          right: '32px',
-          bottom: 'clamp(4.88rem, 9.74vw, 7.5rem)',
-        }}
+        className='absolute top-[342px] right-[35px] object-contain lg:top-[243px] lg:right-[25px]'
       />
       <Image
         src='/images/flag-usa.svg'
         width={70}
         height={32}
         alt='pixel-world-map'
-        className='absolute object-contain'
-        style={{
-          right: '14px',
-          bottom: 'clamp(11.25rem, 20.78vw, 16rem)',
-        }}
+        className='absolute top-[208px] right-[14px] object-contain lg:top-[107px] lg:right-[71px]'
       />
     </div>
   );

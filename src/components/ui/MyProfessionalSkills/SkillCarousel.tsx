@@ -61,7 +61,7 @@ const SkillCarousel: React.FC<SkillCarouselProps> = ({ slides }) => {
         <CarouselContent>
           {slides.map((slide, idx) => (
             <CarouselItem key={idx}>
-              <div className='flex flex-wrap justify-center gap-5 px-2 py-4'>
+              <div className='flex flex-wrap justify-center gap-5 px-0.5 py-4'>
                 {slide.map((skill, i) => (
                   <SkillProgressCard
                     className='flex flex-1 basis-[480px] flex-col p-4'

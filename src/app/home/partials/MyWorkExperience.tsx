@@ -1,5 +1,6 @@
 import React from 'react';
 
+import FadeInWhenVisible from '@/components/ui/FadeInWhenVisible';
 import MyWorkExperienceCard from '@/components/ui/MyWorkExperience/MyWorkExperienceCard';
 
 import { workExperienceData } from '@/constant/myWorkExperienceData';
@@ -20,15 +21,17 @@ const MyWorkExperience = () => {
       >
         My Work Experience
       </h2>
-      <div className='flex flex-col gap-[32px] md:gap-[64px]'>
-        {workExperienceData.map((item, idx) => (
-          <MyWorkExperienceCard
-            key={idx}
-            data={item}
-            isLast={idx === workExperienceData.length - 1}
-          />
-        ))}
-      </div>
+      <FadeInWhenVisible>
+        <div className='flex flex-col gap-[32px] md:gap-[64px]'>
+          {workExperienceData.map((item, idx) => (
+            <MyWorkExperienceCard
+              key={idx}
+              data={item}
+              isLast={idx === workExperienceData.length - 1}
+            />
+          ))}
+        </div>
+      </FadeInWhenVisible>
     </div>
   );
 };
