@@ -71,13 +71,16 @@ const Navbar = () => {
       className={`fixed top-0 z-60 w-full transition-colors transition-transform duration-1000 ${isScrolled ? 'text-black' : 'text-white'} ${isNavbarVisible ? 'translate-y-0' : '-translate-y-full'}`}
     >
       <div className='flex-between custom-container h-20'>
-        <Image
-          // src='/images/your-logo-w.svg'
-          src={isScrolled ? '/images/your-logo.svg' : '/images/your-logo-w.svg'}
-          alt='logo'
-          width={141}
-          height={32}
-        />
+        <Link href='#home'>
+          <Image
+            src={
+              isScrolled ? '/images/your-logo.svg' : '/images/your-logo-w.svg'
+            }
+            alt='logo'
+            width={141}
+            height={32}
+          />
+        </Link>
         <nav className='hidden lg:block'>
           <ul className='flex gap-8'>
             {navigationData.map((data) => (
