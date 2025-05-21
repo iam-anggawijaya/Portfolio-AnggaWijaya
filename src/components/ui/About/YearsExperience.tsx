@@ -3,8 +3,6 @@ import React from 'react';
 
 import { cn } from '@/lib/utils';
 
-import FadeInWhenVisible from '../FadeInWhenVisible';
-
 type YearsExperienceProps = {
   title?: string;
   className?: string;
