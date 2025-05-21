@@ -3,7 +3,6 @@ import React from 'react';
 import { Badge, badges } from '@/constant/whyChooseMeBadgesData';
 import { cn } from '@/lib/utils';
 
-import FadeInWhenVisible from '../FadeInWhenVisible';
 import { Marquee } from '../marquee';
 
 type WhyChooseMeProps = {

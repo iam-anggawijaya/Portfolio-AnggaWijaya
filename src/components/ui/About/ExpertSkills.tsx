@@ -15,7 +15,6 @@ import IconScribd from '@/../public/icons/icon-scribd.svg';
 import IconTs from '@/../public/icons/icon-ts.svg';
 import { cn } from '@/lib/utils';
 
-import FadeInWhenVisible from '../FadeInWhenVisible';
 import { Marquee } from '../marquee';
 
 type ExpertSkillsProps = {
