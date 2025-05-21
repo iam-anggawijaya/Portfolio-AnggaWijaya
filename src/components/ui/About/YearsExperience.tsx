@@ -3,6 +3,8 @@ import React from 'react';
 
 import { cn } from '@/lib/utils';
 
+import FadeInWhenVisible from '../FadeInWhenVisible';
+
 type YearsExperienceProps = {
   title?: string;
   className?: string;
@@ -15,7 +17,7 @@ const YearsExperience: React.FC<YearsExperienceProps> = ({
   return (
     <div
       className={cn(
-        'flex-between relative h-[395px] flex-col overflow-hidden bg-neutral-900 text-center',
+        'flex-between relative h-[395px] w-[381px] flex-col overflow-hidden bg-neutral-900 text-center',
         className
       )}
     >

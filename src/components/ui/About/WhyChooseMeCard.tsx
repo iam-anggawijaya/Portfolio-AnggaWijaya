@@ -3,6 +3,9 @@ import React from 'react';
 import { Badge, badges } from '@/constant/whyChooseMeBadgesData';
 import { cn } from '@/lib/utils';
 
+import FadeInWhenVisible from '../FadeInWhenVisible';
+import { Marquee } from '../marquee';
+
 type WhyChooseMeProps = {
   title?: string;
   description?: string;
@@ -17,7 +20,7 @@ const WhyChooseMeCard: React.FC<WhyChooseMeProps> = ({
   return (
     <div
       className={cn(
-        `bg-secondary-300 relative z-11 h-[395px] overflow-hidden`,
+        `bg-secondary-300 relative z-11 h-[395px] w-[381px] overflow-hidden`,
         className
       )}
     >
@@ -29,7 +32,7 @@ const WhyChooseMeCard: React.FC<WhyChooseMeProps> = ({
           {description}
         </p>
       </div>
-      <Badges className='left-1/2 z-1 -translate-x-[45%]' />
+      <Badges className='left-1/2 z-1 -translate-x-[55%]' />
       <div className='from-secondary-300 absolute inset-y-0 left-0 z-6 w-[25%] bg-gradient-to-r to-transparent' />
       <div className='from-secondary-300 absolute inset-y-0 right-0 z-6 w-[35%] bg-gradient-to-l to-transparent' />
     </div>
@@ -51,14 +54,16 @@ const Badges: React.FC<Badge> = ({ className }) => {
           key={rowIdx}
           className={rowIdx === 1 ? 'flex gap-3' : 'ml-9.5 flex gap-3'}
         >
-          {row.map((badge, idx) => (
-            <span
-              key={idx}
-              className='text-sm-regular md:text-md-regular bg-base-white rounded-full px-4 py-1 text-neutral-950'
-            >
-              {badge.text}
-            </span>
-          ))}
+          <Marquee className='p-0' pauseOnHover={false}>
+            {row.map((badge, idx) => (
+              <span
+                key={idx}
+                className='text-sm-regular md:text-md-regular bg-base-white rounded-full px-4 py-1 text-neutral-950'
+              >
+                {badge.text}
+              </span>
+            ))}
+          </Marquee>
         </div>
       ))}
     </div>

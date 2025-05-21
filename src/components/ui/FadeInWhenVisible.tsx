@@ -1,14 +1,16 @@
 import { motion, useAnimation } from 'framer-motion';
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-const FadeInWhenVisible = ({
-  children,
-  className,
-  delay = 0.3,
-}: {
+
+interface FadeInWhenVisibleProps {
   children: React.ReactNode;
   className?: string;
   delay?: number;
+}
+const FadeInWhenVisible: React.FC<FadeInWhenVisibleProps> = ({
+  children,
+  className,
+  delay = 0.3,
 }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.2 });

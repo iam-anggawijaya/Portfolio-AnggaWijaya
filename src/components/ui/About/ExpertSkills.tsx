@@ -15,6 +15,9 @@ import IconScribd from '@/../public/icons/icon-scribd.svg';
 import IconTs from '@/../public/icons/icon-ts.svg';
 import { cn } from '@/lib/utils';
 
+import FadeInWhenVisible from '../FadeInWhenVisible';
+import { Marquee } from '../marquee';
+
 type ExpertSkillsProps = {
   title?: string;
   icon?: React.ReactNode;
@@ -33,7 +36,7 @@ const ExpertSkills: React.FC<ExpertSkillsProps> = ({
   return (
     <div
       className={cn(
-        'flex h-[395px] flex-col gap-8 bg-neutral-900 px-4 pt-[32px] md:px-6 md:pt-[29px]',
+        'flex h-[395px] w-[381px] flex-col gap-8 bg-neutral-900 px-4 pt-[32px] md:px-6 md:pt-[29px]',
         className
       )}
       style={{}}
@@ -98,14 +101,16 @@ const ExpertSkillsBadges = () => {
     <div className='flex flex-col gap-6'>
       {iconExpertSkillData.map((row, rowIdx) => (
         <div key={rowIdx} className='flex justify-between'>
-          {row.map((icon, idx) => (
-            <div
-              key={idx}
-              className='flex-center h-[53px] w-[53px] rounded-full bg-neutral-800'
-            >
-              <Image src={icon.src} alt={icon.alt} />
-            </div>
-          ))}
+          <Marquee className='p-0' pauseOnHover={false}>
+            {row.map((icon, idx) => (
+              <div
+                key={idx}
+                className='flex-center h-[53px] w-[53px] rounded-full bg-neutral-800'
+              >
+                <Image src={icon.src} alt={icon.alt} />
+              </div>
+            ))}
+          </Marquee>
         </div>
       ))}
     </div>
