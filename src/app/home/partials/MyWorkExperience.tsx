@@ -9,7 +9,7 @@ const MyWorkExperience = () => {
   return (
     //Section---------------------------------------------------------------------------------
     <div
-      className='custom-container pointer-events-none flex flex-col gap-[64px] pt-[40px] pb-[40px] md:pt-[40px] md:pb-[80px]'
+      className='custom-container pointer-events-none flex flex-col gap-[64px] py-[40px] md:py-[80px]'
       id='container-skill'
     >
       <h2

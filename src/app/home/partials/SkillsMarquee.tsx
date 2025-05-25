@@ -9,7 +9,7 @@ const SkillsMarquee = () => {
   return (
     <div
       id='target-section'
-      className='relative z-50 mx-auto -mt-[32px] flex w-full -rotate-[1.89deg] items-center bg-neutral-950'
+      className='relative z-50 mx-auto -mt-[32px] flex w-full scale-x-101 -rotate-[1.89deg] items-center bg-neutral-950'
       style={{
         height: 'clamp(5.25rem, 9.72vw, 8.75rem)',
       }}

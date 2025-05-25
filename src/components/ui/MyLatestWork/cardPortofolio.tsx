@@ -23,10 +23,10 @@ const CardPortofolio: React.FC<CardPortofolioProps> = ({
   return (
     <div className={cn('flex h-[444px] flex-col gap-5', className)}>
       <div className='flex-between w-full'>
-        <span className='rounded-full border-2 border-dashed border-neutral-400 px-4 py-1 text-neutral-950'>
+        <span className='rounded-full border-1 border-dashed border-neutral-400 px-4 py-1 text-neutral-950'>
           {category}
         </span>
-        <span className='rounded-full border-2 border-dashed border-neutral-400 px-4 py-1 text-neutral-950'>
+        <span className='rounded-full border-1 border-dashed border-neutral-400 px-4 py-1 text-neutral-950'>
           {year}
         </span>
       </div>

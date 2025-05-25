@@ -1,5 +1,5 @@
 'use client';
-
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import React from 'react';
 
@@ -36,14 +36,16 @@ const Decoration: React.FC<{ isLast?: boolean; desktop?: boolean }> = ({
   >
     {!isLast && (
       <div
-        className={`absolute left-1/2 z-0 -translate-x-1/2 border-l-2 border-dashed border-neutral-400 ${desktop ? 'h-[calc(100%+66px)]' : 'h-[calc(100%+26px)]'}`}
+        className={`absolute left-1/2 z-0 -translate-x-1/2 border-l-1 border-dashed border-neutral-400 ${desktop ? 'h-[calc(100%+66px)]' : 'h-[calc(100%+26px)]'}`}
       />
     )}
     <div
-      className={`bg-base-white flex-center z-10 flex rounded-full border border-dashed border-neutral-400 ${desktop ? 'size-[40px]' : 'size-[24px]'}`}
+      className={`bg-base-white flex-center z-10 rounded-full border border-dashed border-neutral-400 ${desktop ? 'size-[40px]' : 'size-[24px]'}`}
     >
-      <div
+      <motion.div
         className={`${desktop ? 'size-[24px]' : 'size-[14px]'} bg-primary-200 rounded-full`}
+        animate={{ scale: [0.8, 1.0, 0.8] }} // Efek muncul dari kecil ke besar lalu kembali normal
+        transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }} // Loop terus menerus
       />
     </div>
   </div>

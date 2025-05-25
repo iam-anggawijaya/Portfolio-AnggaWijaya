@@ -99,9 +99,12 @@ const Navbar = () => {
 
         <Button
           asChild
-          className={`hover:bg-primary-200 hidden transition-colors duration-300 lg:flex lg:w-43.75 ${isScrolled ? 'bg-primary-300 text-neutral-25' : 'bg-neutral-25 text-neutral-950'}`}
+          className={`hover:bg-primary-200 hover:text-neutral-25 hidden transition-colors duration-300 lg:flex lg:w-43.75 ${isScrolled ? 'bg-primary-300 text-neutral-25' : 'bg-neutral-25 text-neutral-950'}`}
         >
-          <Link href='#contact' className='flex items-center gap-2'>
+          <Link
+            href='#contact'
+            className='text-sm-medium flex items-center gap-2'
+          >
             <Mail className='size-5' />
             Hire Me
           </Link>
@@ -137,14 +140,16 @@ const Navbar = () => {
                 ))}
               </ul>
             </nav>
-
             <Button
               asChild
               variant='secondary'
               className='hover:bg-primary-200 mt-3 hidden w-full transition-colors duration-300'
             >
               <SheetClose asChild>
-                <Link href='#contact' className='flex-center gap-1'>
+                <Link
+                  href='#contact'
+                  className='flex-center text-neutral-25 gap-1'
+                >
                   <Mail className='size-5' />
                   Hire Me
                 </Link>

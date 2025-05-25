@@ -14,7 +14,7 @@ export const FeatureTabel: React.FC<{
     <>
       {/* Label Skill */}
       <div
-        className={`bg-base-white py-5 text-center ${!isFirst ? 'border-t border-neutral-300' : ''} ${!isLast ? 'border-b border-neutral-300' : ''}`}
+        className={`bg-base-white py-5 text-center ${!isFirst ? '' : ''} ${!isLast ? 'border-b border-neutral-300' : ''}`}
       >
         <span className='text-sm-medium md:text-lg-medium text-neutral-950'>
           {feature.label}
@@ -23,7 +23,7 @@ export const FeatureTabel: React.FC<{
 
       {/* Me */}
       <div
-        className={`flex-center bg-base-white py-5 ${!isFirst ? 'border-t border-neutral-300' : ''} ${!isLast ? 'border-b border-neutral-300' : ''}`}
+        className={`flex-center bg-base-white py-5 ${!isFirst ? '' : ''} ${!isLast ? 'border-b border-neutral-300' : ''}`}
       >
         {feature.me ? (
           <Icon
@@ -33,14 +33,14 @@ export const FeatureTabel: React.FC<{
         ) : (
           <Icon
             icon='mingcute:close-circle-fill'
-            className='size-6 text-neutral-400 md:size-7'
+            className='size-6 text-neutral-400 md:size-[29px]'
           />
         )}
       </div>
 
       {/* Other */}
       <div
-        className={`flex-center bg-base-white py-5 ${!isFirst ? 'border-t border-neutral-300' : ''} ${!isLast ? 'border-b border-neutral-300' : ''}`}
+        className={`flex-center bg-base-white py-5 ${!isFirst ? '' : ''} ${!isLast ? 'border-b border-neutral-300' : ''}`}
       >
         {feature.other ? (
           <Icon
@@ -50,7 +50,7 @@ export const FeatureTabel: React.FC<{
         ) : (
           <Icon
             icon='mingcute:close-circle-fill'
-            className='size-6 text-neutral-400 md:size-7'
+            className='size-6 text-neutral-400 md:size-[29px]'
           />
         )}
       </div>

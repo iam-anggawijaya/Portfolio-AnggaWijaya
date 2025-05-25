@@ -71,7 +71,6 @@ const FAQ = () => {
             <Button
               asChild
               variant={'secondary'}
-              size='default'
               className='hover:bg-primary-200'
             >
               <Link href='#contact' className='text-sm-medium text-neutral-25'>

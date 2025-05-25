@@ -8,7 +8,7 @@ const SuccessStories = () => {
   return (
     //Section---------------------------------------------------------------------------------
     <div
-      className='custom-container flex flex-col gap-[24px] pt-[40px] pb-[40px] md:gap-[48px] md:pt-[80px] md:pb-[80px]'
+      className='custom-container flex flex-col gap-[24px] py-[40px] md:gap-[48px] md:py-[80px]'
       id='container-skill'
     >
       <h2

@@ -19,7 +19,7 @@ const WhyChooseMeCard: React.FC<WhyChooseMeProps> = ({
   return (
     <div
       className={cn(
-        `bg-secondary-300 relative z-11 h-[395px] w-[381px] overflow-hidden`,
+        `bg-secondary-300 relative z-11 flex h-[374px] w-[381px] overflow-hidden md:h-[395px]`,
         className
       )}
     >
@@ -44,7 +44,7 @@ const Badges: React.FC<Badge> = ({ className }) => {
   return (
     <div
       className={cn(
-        'absolute top-[178px] flex w-[720px] translate-x-[8%] flex-col gap-3 md:top-[198px]',
+        'xs:flex absolute bottom-[56px] hidden w-[720px] translate-x-[8%] flex-col gap-3 md:top-[198px]',
         className
       )}
     >

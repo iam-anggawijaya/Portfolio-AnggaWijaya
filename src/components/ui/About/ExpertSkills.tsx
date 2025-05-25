@@ -35,16 +35,12 @@ const ExpertSkills: React.FC<ExpertSkillsProps> = ({
   return (
     <div
       className={cn(
-        'flex h-[395px] w-[381px] flex-col gap-8 bg-neutral-900 px-4 pt-[32px] md:px-6 md:pt-[29px]',
+        'relative flex h-[374px] w-[381px] flex-col gap-8 overflow-hidden bg-neutral-900 px-4 pt-[32px] md:h-[395px] md:px-6 md:pt-[29px]',
         className
       )}
-      style={{}}
     >
-      <div className='flex flex-col gap-[8px] md:gap-[12px]'>
-        <h3
-          className='text-neutral-25 display-sm-bold md:display-md-bold'
-          style={{}}
-        >
+      <div className='z-10 flex flex-col gap-[8px] md:gap-[12px]'>
+        <h3 className='text-neutral-25 display-sm-bold md:display-md-bold'>
           {title}
         </h3>
 
@@ -61,11 +57,11 @@ const ExpertSkills: React.FC<ExpertSkillsProps> = ({
           {icon}
         </div>
 
-        <div className='text-neutral-25 text-sm-regular' style={{}}>
-          {description}
-        </div>
+        <div className='text-neutral-25 text-sm-regular'>{description}</div>
       </div>
       <ExpertSkillsBadges />
+      <div className='absolute inset-y-0 left-0 z-6 w-[25%] bg-gradient-to-r from-neutral-900 to-transparent' />
+      <div className='absolute inset-y-0 right-0 z-6 w-[25%] bg-gradient-to-l from-neutral-900 to-transparent' />
     </div>
   );
 };
@@ -97,10 +93,10 @@ const iconExpertSkillData: IconExpertSkillProps[][] = [
 
 const ExpertSkillsBadges = () => {
   return (
-    <div className='flex flex-col gap-6'>
+    <div className='xs:flex absolute bottom-[44px] left-0 hidden flex-col gap-6 md:bottom-[47px]'>
       {iconExpertSkillData.map((row, rowIdx) => (
-        <div key={rowIdx} className='flex justify-between'>
-          <Marquee className='p-0' pauseOnHover={false}>
+        <div key={rowIdx} className='flex'>
+          <Marquee className='py-0 [--gap:16px]' pauseOnHover={false}>
             {row.map((icon, idx) => (
               <div
                 key={idx}

@@ -14,7 +14,7 @@ const HireMeCard: React.FC<HireMeCardProps> = ({ className }) => {
   return (
     <div
       className={cn(
-        'bg-primary-300 flex-center relative h-[395px] overflow-hidden',
+        'bg-primary-300 flex-center relative flex h-[374px] overflow-hidden md:h-[395px]',
         className
       )}
     >
@@ -38,7 +38,8 @@ const HireMeCard: React.FC<HireMeCardProps> = ({ className }) => {
       />
       <Button
         asChild
-        className='hover:bg-primary-200 absolute bottom-[31px] z-20 flex h-[48px] px-[76px] transition-colors duration-300'
+        variant={'default'}
+        className='hover:bg-primary-200 absolute bottom-[31px] z-20 flex px-[76px] transition-colors duration-300'
       >
         <Link
           href='#contact'

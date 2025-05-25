@@ -118,6 +118,9 @@ export default {
           black: 'var(--color-base-black)',
         },
       },
+      screens: {
+        xs: '340px', // Menambahkan breakpoint untuk ukuran layar di bawah 340px
+      },
     },
   },
   plugins: [customTextPlugin],
