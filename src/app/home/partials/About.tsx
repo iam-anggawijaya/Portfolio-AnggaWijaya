@@ -38,7 +38,7 @@ const About = () => (
         <div className='group flex-center flex flex-wrap gap-[20px] pt-[24px] md:pt-[48px]'>
           <WhyChooseMe className='flex-1 basis-[320px] rounded-2xl p-5 md:p-6' />
           <ExpertSkills className='flex-1 basis-[320px] rounded-2xl p-5 md:p-6' />
-          <YearsExperience className='flex-1 basis-[320px] rounded-2xl p-5 md:p-6' />
+          <YearsExperience className='flex-1 basis-[320px] rounded-2xl p-6.5 md:p-9' />
           <HireMeCard className='flex-1 basis-[320px] rounded-2xl p-5 md:p-6' />
           <BuildingDigitalProducts className='flex-2 basis-[660px] rounded-2xl' />
         </div>

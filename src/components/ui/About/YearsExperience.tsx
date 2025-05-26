@@ -15,34 +15,34 @@ const YearsExperience: React.FC<YearsExperienceProps> = ({
   return (
     <div
       className={cn(
-        'flex-between relative flex h-[374px] w-[381px] flex-col overflow-hidden bg-neutral-900 text-center md:h-[395px]',
+        'relative flex h-[374px] w-[381px] flex-col justify-end overflow-hidden bg-neutral-900 md:h-[395px]',
         className
       )}
     >
-      <h3 className='display-md-bold md:display-xl-bold text-base-white z-10 max-w-[250px] pt-20 break-words'>
+      <h3 className='display-md-bold md:display-xl-bold text-base-white z-10 m-auto text-center'>
         {title}
       </h3>
-      <div className='flex-center z-9 gap-3 pb-[28px]'>
+      <div id='gambar' className='xs:flex z-50 hidden flex-wrap gap-3'>
         <Image
           src='/images/portfolio-card1.jpg'
-          width={95}
-          height={71}
+          width={50}
+          height={40}
           alt='portfolio-card1'
-          className='rounded-xl object-contain'
+          className='flex-1 rounded-xl object-contain'
         />
         <Image
           src='/images/portfolio-card2.jpg'
-          width={95}
-          height={71}
+          width={50}
+          height={40}
           alt='portfolio-card2'
-          className='rounded-xl object-contain'
+          className='flex-1 rounded-xl object-contain'
         />
         <Image
           src='/images/portfolio-card4.jpg'
-          width={95}
-          height={71}
+          width={50}
+          height={40}
           alt='portfolio-card4'
-          className='rounded-xl object-contain'
+          className='flex-1 rounded-xl object-contain'
         />
       </div>
       <Image

@@ -17,13 +17,14 @@ const FrontendExpertCard: React.FC<FrontendExpertCardProps> = ({
   return (
     <div
       className={cn(
-        'absolute -translate-x-[55px] rotate-[-10.09deg] rounded-xl border border-[rgba(253,253,253,0.1)] bg-[rgba(40,40,40,0.2)] backdrop-blur-lg md:rotate-[-3.24deg] md:rounded-2xl',
+        'absolute -translate-x-[65px] rotate-[-10.09deg] rounded-xl border border-[rgba(253,253,253,0.1)] bg-[rgba(40,40,40,0.2)] backdrop-blur-lg sm:translate-x-0 md:rotate-[-3.24deg] md:rounded-2xl',
+
         className
       )}
       style={{
         padding: 'clamp(0.75rem, 1.39vw, 1.25rem)',
-        left: 'clamp(0.31rem, 15.69vw, 14.13rem)',
-        top: 'clamp(30.25rem, 47.57vw, 42.81rem)',
+        left: 'clamp(-5.19rem, 15.69vw, 14.13rem)',
+        top: 'clamp(30.25rem, 47.57vw, 41.81rem)',
       }}
     >
       <div

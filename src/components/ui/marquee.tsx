@@ -13,7 +13,7 @@ interface MarqueeProps extends ComponentPropsWithRef<'div'> {
 
 export const Marquee: React.FC<MarqueeProps> = ({
   className,
-  reverse = false,
+  reverse = true,
   pauseOnHover = true,
   children,
   vertical = false,

@@ -15,7 +15,7 @@ import SkillWhyChooseMe from './home/partials/WhyChooseMe';
 
 const Home = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Navbar />
       <Hero />
       <SkillsMarquee />

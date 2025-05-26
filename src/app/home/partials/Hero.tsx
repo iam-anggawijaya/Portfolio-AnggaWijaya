@@ -15,11 +15,7 @@ const Hero = () => {
       id='home'
       style={{ height: 'clamp(43.81rem, 61.53vw, 55.38rem)' }}
     >
-      <div
-        className='relative w-192 md:w-360'
-        // style={{ height: 'clamp(43.81rem, 61.53vw, 55.38rem)' }}
-        id='hero-container'
-      >
+      <div className='relative w-192 md:w-360' id='hero-container'>
         <h1
           className='text-base-white absolute left-1/2 z-10 w-full -translate-x-[50%] text-center font-extrabold whitespace-nowrap'
           style={{
@@ -68,8 +64,6 @@ const Hero = () => {
 
         <GlobalClientsCard title='50+' description='Global Clients' />
       </div>
-      <div className='bg-base-white absolute top-225 left-0 z-10 hidden h-[120px] w-full scale-x-101 -rotate-[1.89deg] 2xl:block' />
-      <div className='bg-primary-400 absolute top-185 left-0 -z-10 hidden h-[120px] w-full scale-x-101 -rotate-[1.89deg] 2xl:block' />
     </section>
   );
 };
